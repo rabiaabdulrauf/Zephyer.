@@ -1,0 +1,898 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.hotel{
+  /* height: 300vh; */
+  width: 100%;
+  /* background-color: #ab946c; */
+  flex-direction: row;
+
+}
+.main{
+  height: 100vh;
+  width: 100%;
+}
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .nav{
+    position: relative;
+    background-color:transparent;
+     display: flex;
+     flex-direction: row;
+     /* justify-content: space-around; */
+     height: 70px;
+     width: 100%;
+     gap: 30vw;
+  }
+  i{
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  .spn{
+    margin-top: .4em;
+    margin-left: 3em;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#fafcfc;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 0.9;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+ 
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .dropbtn {
+    background-color:transparent;
+    color:black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  margin-top: 1.5em;
+  }
+ .BTN1{
+    height: 40px;
+    width: 100px;
+    border: transparent;
+    border: 1px solid white;
+    color:white;
+    background-color: transparent;
+ }
+ .img{
+    height: 100px;
+    width: 150px;
+    margin-left: 5em;
+ }
+ .BTN1:hover{
+    background-color: white;
+    color: black;
+ }
+ .line{
+    position: relative;
+    margin: 10em 0 0 27em  ;
+   width: 400px;
+   text-align: center;
+ }
+
+ #btn{
+  color: #ab946c;
+  background-color: transparent;
+border: none;
+  /* border:1px solid #ab946c ; */
+  text-decoration: underline;
+
+ }
+ #btn:hover{
+   color: black;
+   text-decoration: underline;
+ }
+ h1{
+    font-size: 54px;
+    color: white;
+    /* background-color: #818181; */
+ }
+
+.main-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5em;
+  gap: 10vw;
+  height: 70vh;
+  width: 100%;
+  background-color: white;
+  /* position: absolute; */
+  /* overflow: hidden; */
+}
+
+.information-div {
+  width: 50%;
+  /* background-color: rgb(155, 84, 84); */
+  margin-top: 10px;
+  margin-left: 50px;
+  /* height: 300px; */
+  /* background-color: #ab946c; */
+  height: 370px;
+  justify-content: start;
+}
+
+#image{
+  height: 350px;
+  width:500px ;
+}
+.image-div {
+  position: relative;
+  width: 45%;
+}
+
+.left-arrow, .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 90%;
+  margin-top: -8em;
+  border: 1px solid black;
+  height: 45px;
+  width: 40px;
+  border-radius: 50%;
+ 
+}
+
+.right-arrow {
+  right: 10%;
+  margin-top: -8em;
+  border: 1px solid black;
+  height: 45px;
+  width: 40px;
+  border-radius: 50%;
+ 
+}
+
+.image-div img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  display: none;
+  margin-left: -40px;
+}
+
+.image-div img.active {
+  display: block;
+}
+h2{
+  text-align: left;
+}
+.para{
+  text-align: left;
+  /* font-size: 16px; */
+  /* justify-content:left; */
+}
+.slider{
+  height: 90vh;
+  width: 100%;
+  background-color: black;
+  /* position: relative; */
+}
+h3{
+  color: white;
+  text-align: center;
+  font-size: 34px;
+}
+.images{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 2em;
+}
+.pic{
+  height: 310px;
+  width: 350px;
+}
+.one{
+  height: 370px;
+  width: 350px; 
+  /* background-color: #ab946c; */
+}
+.imge{
+  position: absolute;
+  background-color:rgba(104, 97, 97, 0.671);
+  height: 290px;
+  width: 330px;
+  bottom: -151%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  margin-left: 8px;
+  color: white;
+}
+.one:hover .imge{
+    opacity: 1;
+    cursor: pointer;
+    border: 1px solid goldenrod;
+    
+}
+.imge2{
+  position: absolute;
+  background-color:rgba(104, 97, 97, 0.671);
+  height: 290px;
+  width: 330px;
+  bottom: -151%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  margin-left: 8px;
+  color: white;
+}
+.one:hover .imge2{
+    opacity: 1;
+    cursor: pointer;
+    border: 1px solid goldenrod;
+    
+}
+.imge3{
+  position: absolute;
+  background-color:rgba(104, 97, 97, 0.671);
+  height: 290px;
+  width: 330px;
+  bottom: -151%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  margin-left: 8px;
+  color: white;
+}
+.one:hover .imge3{
+    opacity: 1;
+    cursor: pointer;
+    border: 1px solid goldenrod;
+    
+}
+h4{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+h5{
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 1em;
+}
+h5:hover{
+  color: #ab946c;
+  text-decoration: underline;
+  cursor: pointer;
+ 
+}
+.spn-one{
+  color: #ab946c;
+ padding-left: 3.3em;
+}
+.villas{
+  background-color: #f5f3f0;
+  height: 100vh;
+  width: 100%;
+   line-height: 190%;
+  /* margin-top: 2em; */
+}
+.beach{
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  /* background-color: #1e180c ; */
+  margin-top: 2em;
+}
+.room{
+  /* background-color: #ab946c; */
+  height: 80vh;
+  width: 50%;
+  margin-left: 50px;
+}
+.room-pic{
+  /* background-color: aquamarine; */
+  height: 100vh;
+  width: 45%;
+  margin-left: -2em;
+}
+#room{
+  height:370px;
+  width: 550px;
+ 
+}
+.carousel-control-prev-icon{
+  /* border: 1px solid black; */
+  margin-left: -3em;
+}
+.carousel-control-next-icon{
+   margin-right: -1em;
+  /* border: 1px solid black; */
+}
+.heading{
+  color: black;
+  text-align: center;
+  padding-top: .5em;
+}
+.seam{
+  text-align: left;
+  font-size: 16px;
+}
+.items{
+  display: flex;
+  flex-direction: row;
+  /* background-color: #dab472; */
+  height: 130px;
+  width: 570px;
+}
+.left{
+  height: 150px;
+  width: 250px;
+  /* background-color: aquamarine; */
+}
+.right{
+  height: 150px;
+  width: 320px;
+  /* background-color: rgb(45, 118, 94); */
+}
+li{
+  list-style: none;
+  text-align: left;
+}
+
+.rest{
+  height: 120vh;
+  width: 100%;
+  background-color:white;
+}
+.hotel-rest{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 2em;
+ 
+}
+#katara{
+   height: 400px;
+   width: 500px;
+   margin-top: 1em;
+}
+.beach-rest{
+  position: absolute;
+  height: 350px;
+  width: 450px;
+  background-color: rgba(104, 97, 97, 0.671);
+  bottom: -378%;
+  margin-left: 1.8em;
+  opacity: 0;
+  transition: opacity 0.5s;
+  
+}
+.beach-rest1{
+  position: absolute;
+  height: 350px;
+  width: 450px;
+  background-color: rgba(104, 97, 97, 0.671);
+  bottom: -378%;
+  margin-left: 1.8em;
+  opacity: 0;
+  transition: opacity 0.5s;
+  
+}
+#rest{
+  height: 90vh;
+  /* background-color: rgb(154, 114, 65); */
+}
+#rest:hover .beach-rest{
+  opacity: 1;
+  cursor: pointer;
+  border: 1px solid #ab946c;
+}
+#rest:hover .beach-rest1{
+  opacity: 1;
+  cursor: pointer;
+  border: 1px solid #ab946c;
+}
+.Restaurant{
+    font-size: 20px;
+    padding-top: 1em;
+    color:#ab946c;
+}
+#para{
+  text-align: left;
+  padding-top: 1em;
+}
+.Restaurant1{
+ color: white;
+}
+.heading1{
+  color: black;
+  text-align: center;
+  padding-top: .7em;
+}
+.wed{
+  height: 200vh;
+  width: 100%;
+  background-color:#f5f3f0;
+}
+.wed-line{
+  color: black;
+  padding-top: 1em;
+  text-align: center;
+}
+.event{
+  height: 200px;
+  width: 70%;
+  /* background-color: chocolate; */
+  margin: 0 auto;
+  margin-top: 2em;
+}
+.wish{
+  color: #bdbdb9;
+  /* text-decoration: none; */
+}
+.occ{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  /* background-color: rgb(192, 81, 41); */
+  /* justify-content: space-around; */
+}
+.wedding{
+  height: 480px;
+  width: 700px;
+  /* background-color: darkcyan; */
+}
+.meeting{
+  height: 480px;
+  width: 700px;
+  /* background-color: rgb(90, 209, 209); */
+}
+.meet{
+  color: #ab946c;
+  text-align: center;
+}
+.web2{
+  height: 410px;
+  width: 600px;
+  /* background-color: #ab946c; */
+  bottom: -541%;
+  position: absolute;
+  margin-left: 1.5em;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.web3{
+  height: 410px;
+  width: 600px;
+  /* background-color: #ab946c; */
+  bottom: -541%;
+  position: absolute;
+  margin-left: 1.5em;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.wed1:hover .web2{
+  opacity: 1;
+  background-image: url(../assets/CKT-WEDDING-4-600x400.jpg.webp);
+  cursor: pointer;
+}
+.wed2:hover .web3{
+  opacity: 1;
+  background-image:url(../assets/Meeting-Room-1-600x400.jpg.webp) ;
+  cursor: pointer;
+}
+.web-pic{
+  height: 410px;
+  width: 600px;
+  margin-left: 1.5em;
+}
+.picture{
+  /* background-color: aquamarine; */
+  height: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: -1em;
+  gap: 1.5em;
+  justify-content: center;
+  
+}
+.row-one{
+  height: 200px;
+  width: 44%;
+  display: flex;
+  flex-direction: row;
+  /* background-color: rebeccapurple; */
+  gap: .8em;
+}
+.row-two{
+  height: 200px;
+  width: 44%;
+  display: flex;
+  flex-direction: row;
+  /* background-color: #2e2414; */
+  gap: .8em;
+}
+.asset{
+  height: 200px;
+  width: 180px;
+  /* background-color: cadetblue; */
+  background-size: cover;
+  object-fit: cover;
+}
+#asset{
+   height: 200px;
+   width: 180px;
+   transition: 0.9s ease-in-out;
+}
+#asset:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.social{
+  height: 130vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+}
+.follow{
+  height: 110vh;
+  width: 30%;
+  margin-left: 4em;
+}
+.gallery{
+  height: 110vh;
+  width: 60%;
+}
+.sc{
+  color: black;
+  text-align: center;
+  font-size: 32px;
+}
+.zp{
+  margin: 0 auto;
+  color: #ab946c;
+ padding-left: 6em;
+}
+.ckt{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin-top: 1em;
+}
+.trading{
+  height: 180px;
+  width: 180px;
+}
+.tl{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.lux{
+  height: 180px;
+    width: 180px;
+}
+.ss{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.sot{
+  height: 180px;
+  width: 180px;
+}
+.src{
+  height: 180px;
+  width: 180px;
+}
+#trade{
+  height: 180px;
+  width: 180px; 
+  transition: 0.9s ;
+}
+#trade:hover{
+  transform: scale(0.9);
+}
+#trading{
+  position: relative;
+  top: -12%;
+  left: 2%;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+.sc-two{
+  color: black;
+  text-align: center;
+  font-size: 32px;
+  padding-top: 1em;
+}
+.icons{
+  margin: 0 auto;
+}
+.ramadan{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.sea{
+  height: 110vh;
+  width: 380px;
+}
+.food{
+  height: 110vh;
+  width: 300px;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.chair{
+  height: 53vh;
+  width: 100%;
+}
+.rmd{
+  height: 53vh;
+  width: 100%;
+}
+#sea{
+  height: 110vh;
+  width: 380px;
+}
+#rmd{
+  height: 53vh;
+  width: 100%;
+}
+.veiw{
+  height: 50px;
+  width: 160px;
+margin-left: 19em;
+margin-top: 2em;
+background-color: #ab946c;
+color: white;
+border: none;
+}
+.veiw:hover{
+  background-color: black;
+  cursor: pointer;
+}
+.news{
+height: 140vh;
+width: 100%;
+background-color: 
+#f5f3f0
+;
+}
+#NEW{
+color: black;
+text-align: center;
+font-size: 32px;
+padding-top: 2em;
+}
+.latest{
+height: 550px;
+width: 90%;
+margin: 0 auto;
+margin-top: 2em;
+display: flex;
+flex-direction: row;
+gap: 2.5em;
+}
+.brunch{
+height: 550px;
+width: 370px;
+}
+.lunch{
+height: 550px;
+width: 370px;
+}
+.dinner{
+height: 550px;
+width: 370px;
+}
+#brunch{
+height: 250px;
+width: 350px;
+}
+#dinner{
+   height: 300px;
+   width: 350px;
+}
+.date{
+  color: rgba(46, 11, 11, 0.721);
+  text-align: left;
+}
+.head{
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+}
+.paragraph{
+  color: black;
+  text-align: left;
+  font-size: 14px;
+}
+.gateway{
+  height: 130vh;
+  width: 100%;
+  background-color: #f5f3f0;
+}
+.fm{
+  height: 110vh;
+  width: 500px;
+  background-color:rgba(245, 245, 245, 0.708);
+  position: relative;
+  top: -90%;
+  left: 7%;
+}
+#bg{
+  height: 130vh;
+  width: 100%;
+}
+#fm{
+  text-align: left;
+  color: rgba(0, 0, 0, 0.644);
+}
+ select{
+  width: 450px;
+  height: 40px;
+  outline: none;
+  background-color: white;
+}
+.data{
+  margin-left: 1em;
+ padding-top: 2em;
+}
+#input{
+  width: 450px;
+  height: 40px;
+  outline: none;
+  background-color: white;
+  border: transparent;
+  border: 1px solid black;
+}
+.last{
+  width: 450px;
+  height: 40px;
+  background-color: #ab946c;
+  color: white;
+  margin: 1.5em;
+  border: none;
+}
+.footer{
+  height: 70vh;
+  background-color: #323940;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.footer-one{
+  height: 400px;
+  width: 300px;
+ 
+}
+.footer-two{
+  height: 400px;
+  width: 300px;
+ 
+}
+.footer-three{
+  height: 400px;
+  width: 300px;
+ 
+}
+.footer-four{
+  height: 400px;
+  width: 300px;
+  
+}
+#foot-img{
+  position: relative;
+  height: 100px;
+  width: 150px;
+  float: left;
+
+}
+i:hover{
+  cursor: pointer;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  gap:.4em;
+  padding-top: 3em;
+  color: white;
+}
+.list-one{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+.copy-right{
+  background-color: black;
+  height: 100px;
+  width: 100%;
+}
+#COPY{
+  color: white;
+  padding-top: 2em;
+}
