@@ -273,7 +273,7 @@ h3{
   background-color:rgba(104, 97, 97, 0.671);
   height: 290px;
   width: 330px;
-  bottom: -151%;
+  bottom: -146%;
   opacity: 0;
   transition: opacity 0.5s;
   margin-left: 8px;
@@ -290,7 +290,7 @@ h3{
   background-color:rgba(104, 97, 97, 0.671);
   height: 290px;
   width: 330px;
-  bottom: -151%;
+  bottom: -146%;
   opacity: 0;
   transition: opacity 0.5s;
   margin-left: 8px;
@@ -307,7 +307,7 @@ h3{
   background-color:rgba(104, 97, 97, 0.671);
   height: 290px;
   width: 330px;
-  bottom: -151%;
+  bottom: -146%;
   opacity: 0;
   transition: opacity 0.5s;
   margin-left: 8px;
@@ -434,7 +434,7 @@ li{
   height: 350px;
   width: 450px;
   background-color: rgba(104, 97, 97, 0.671);
-  bottom: -378%;
+  bottom: -371%;
   margin-left: 1.8em;
   opacity: 0;
   transition: opacity 0.5s;
@@ -445,7 +445,7 @@ li{
   height: 350px;
   width: 450px;
   background-color: rgba(104, 97, 97, 0.671);
-  bottom: -378%;
+  bottom: -371%;
   margin-left: 1.8em;
   opacity: 0;
   transition: opacity 0.5s;
@@ -529,7 +529,7 @@ li{
   height: 410px;
   width: 600px;
   /* background-color: #ab946c; */
-  bottom: -541%;
+  bottom: -532%;
   position: absolute;
   margin-left: 1.5em;
   opacity: 0;
@@ -539,7 +539,7 @@ li{
   height: 410px;
   width: 600px;
   /* background-color: #ab946c; */
-  bottom: -541%;
+  bottom: -532%;
   position: absolute;
   margin-left: 1.5em;
   opacity: 0;
@@ -821,7 +821,7 @@ width: 350px;
   margin-left: 1em;
  padding-top: 2em;
 }
-#input{
+.input-feild{
   width: 450px;
   height: 40px;
   outline: none;
@@ -836,6 +836,10 @@ width: 350px;
   color: white;
   margin: 1.5em;
   border: none;
+}
+.last:hover{
+  background-color: black;
+  color: white;
 }
 .footer{
   height: 70vh;

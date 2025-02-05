@@ -821,9 +821,9 @@
       }
       .data{
         margin-left: .2em;
-       padding-top: 2em;
+       padding-top: .5em;
       }
-      #input{
+      .input-feild{
         width: 300px;
         height: 40px;
         outline: none;

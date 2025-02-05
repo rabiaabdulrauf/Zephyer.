@@ -1,3 +1,32 @@
+// function sendMail(){
+
+//   var params={
+//     name:document.getElementById("name").value,
+//     email:document.getElementById("email").value,
+//     message:document.getElementById("msg").value,
+//     select:document.getElementById("choose").value,
+//   };
+
+//   const serviceID="service_933ivou";
+//   const  tempID="template_7lcg51e";
+  
+//  emailjs
+// .send(serviceID,tempID,params)
+// .then((res) =>{
+//     document.getElementById("name").value="";
+//     document.getElementById("email").value="";
+//     document.getElementById("message").value="";
+//     document.getElementById("select").value="";
+//     console.log(res);
+//     alert("successful");
+// })
+// .catch((err) => console.log(err));
+// }
+
+
+
+
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
   }

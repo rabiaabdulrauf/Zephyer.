@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="style/media.css">
     <link rel="shortcut icon" href="assets/shortcut.png">
     <title>Zephyer | Qatar Hotel</title>
+    <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ovVFZzYRIw5pdFyGy",
+      });
+   })();
+</script> -->
 </head>
 <body>
   <div class="hotel">
@@ -186,8 +196,6 @@
   <div id="rest">
     <h3 class="Restaurant">The Restaurant</h3>
     <img src="assets/The-Restaurant_The-Chedi-Katara.jpg.webp" id="katara"  alt="">
-    <!-- <h5>Arabic night of the Beach</h5> -->
-    <!-- <span class="spn-one">DINING OFFER</span> -->
     <div class="beach-rest">
       <h3 class="Restaurant1">The Restaurant</h3>
       <p id="para">Poolside with relaxing sea views, The Restaurant offers casual outdoor dining on its expansive patio for those who wish to dine with a side of sunshine, as well as an inviting indoor dining room under soaring coffered ceilings.</p>
@@ -197,8 +205,6 @@
     <div id="rest">
       <h3 class="Restaurant">The Beach Restaurant</h3>
       <img src="assets/CHEDIKATARA_BEACHRESTO_ARCHITECTURE-20727.jpg.webp" id="katara"  alt="">
-      <!-- <h5>Arabic night of the Beach</h5> -->
-      <!-- <span class="spn-one">DINING OFFER</span> -->
       <div class="beach-rest1">
         <h3 class="Restaurant1">The Beach Restaurant</h3>
         <p id="para">Clubby yet casual, this relaxed beachfront eatery welcomes all through its glazed French doors, opening onto a generous deck and the 35-meter-long family swimming pool.</p>
@@ -343,23 +349,17 @@
     <p id="fm">Subscribe to be first  to know about our special offers. </p>
     <p id="fm">"*" indicates require fields. </p>
     <h6>Title/ Sitution*</h6>
-    <select>
-     
-      <option>Please choose an option</option>
-      <option>Mr.</option>
-      <option>Mrs.</option>
-      <option>Ms.</option>
-      <option>Dr.</option>
-      <option>Pr.</option>
-      </select>  
-      <h6>First Name*</h6>
-      <input type="text" id="input">
-      <h6>Last Name*</h6>
-      <input type="text" id="input">
-      <h6>E-mail Address*</h6>
-      <input type="email" id="input">
+      <form action="https://formsubmit.co/rabiaabdulrauf18@gmail.com" method="POST">
+      <h6>Name*</h6>
+      <input  type="text" id="name" name="name" class="input-feild">
+      <h6>E-mail*</h6>
+      <input type="email" id="email" name="email" required class="input-feild">
+      <h6>Message*</h6>
+      <textarea name="Message"  class="input-feild" required></textarea>
+      <h6>Date*</h6>
+      <input type="date" name="date" placeholder="date" class="input-feild" required>
       <h6>Country of Residence*</h6>
-    <select>
+    <select name="Continent">
      
       <option>Pakistan</option>
       <option>Canada</option>
@@ -370,7 +370,8 @@
       </select> 
     
      </div>
-     <button class="last">SUBMIT</button>
+     <button class="last" type="submit">SUBMIT</button>
+    </form>
     </div>
 </div>
 <!-------------------------------------footer--------------------------------->
