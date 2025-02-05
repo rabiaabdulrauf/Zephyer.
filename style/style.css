@@ -273,7 +273,7 @@ h3{
   background-color:rgba(104, 97, 97, 0.671);
   height: 290px;
   width: 330px;
-  bottom: -146%;
+  bottom: -151%;
   opacity: 0;
   transition: opacity 0.5s;
   margin-left: 8px;
@@ -290,7 +290,7 @@ h3{
   background-color:rgba(104, 97, 97, 0.671);
   height: 290px;
   width: 330px;
-  bottom: -146%;
+  bottom: -151%;
   opacity: 0;
   transition: opacity 0.5s;
   margin-left: 8px;
@@ -307,7 +307,7 @@ h3{
   background-color:rgba(104, 97, 97, 0.671);
   height: 290px;
   width: 330px;
-  bottom: -146%;
+  bottom: -151%;
   opacity: 0;
   transition: opacity 0.5s;
   margin-left: 8px;
@@ -434,7 +434,7 @@ li{
   height: 350px;
   width: 450px;
   background-color: rgba(104, 97, 97, 0.671);
-  bottom: -371%;
+  bottom: -377%;
   margin-left: 1.8em;
   opacity: 0;
   transition: opacity 0.5s;
@@ -445,7 +445,7 @@ li{
   height: 350px;
   width: 450px;
   background-color: rgba(104, 97, 97, 0.671);
-  bottom: -371%;
+  bottom: -377%;
   margin-left: 1.8em;
   opacity: 0;
   transition: opacity 0.5s;
@@ -529,7 +529,7 @@ li{
   height: 410px;
   width: 600px;
   /* background-color: #ab946c; */
-  bottom: -532%;
+  bottom: -541%;
   position: absolute;
   margin-left: 1.5em;
   opacity: 0;
@@ -539,7 +539,7 @@ li{
   height: 410px;
   width: 600px;
   /* background-color: #ab946c; */
-  bottom: -532%;
+  bottom: -541%;
   position: absolute;
   margin-left: 1.5em;
   opacity: 0;
